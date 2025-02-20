@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Feedback Form</title>
     <style>
         body {
             background-color: black;
+            /* Sets background color */
             color: white;
+            /* Sets text color */
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            /* Uses Arial font */
+            text-align: center;
+            /* Centers text */
             margin: 0;
+            padding: 0;
         }
+
         .form-container {
             background: #222;
+            /* Dark gray background */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-            width: 400px;
+            width: 300px;
+            margin: 50px auto;
+            /* Centers the form */
         }
+
         .form-group {
-            display: flex;
-            flex-direction: column;
             margin-bottom: 10px;
         }
+
         label {
+            display: block;
+            /* Ensures label appears above input */
             font-size: 14px;
             margin-bottom: 5px;
         }
-        input, textarea {
+
+        input,
+        textarea {
+            width: 100%;
+            /* Makes input fields stretch full width */
             padding: 8px;
-            border: none;
+            border: 1px solid #555;
             border-radius: 4px;
         }
+
         .radio-group {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
         }
-        .radio-group label {
-            display: flex;
-            align-items: center;
-        }
-        textarea {
-            height: 80px;
-        }
+
         .submit-btn {
             background: white;
             color: black;
@@ -55,11 +61,13 @@
             border-radius: 4px;
             width: 100%;
         }
+
         .submit-btn:hover {
             background: gray;
         }
     </style>
 </head>
+
 <body>
 
     <div class="form-container">
@@ -90,4 +98,5 @@
     </div>
 
 </body>
+
 </html>
