@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            width: 400px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .radio-group label {
+            display: flex;
+            align-items: center;
+        }
+        textarea {
+            height: 80px;
+        }
+        .submit-btn {
+            background: white;
+            color: black;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 style="text-align: center;">Feedback Form</h2>
+        <form>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Contact No.:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email">
+            </div>
+            <div class="radio-group">
+                <label><input type="radio" name="feedback"> Comments</label>
+                <label><input type="radio" name="feedback"> Suggestions</label>
+                <label><input type="radio" name="feedback"> Questions</label>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Type your message here..."></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
