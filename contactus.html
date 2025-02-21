@@ -1,29 +1,110 @@
 <html>
-    <head>
-        <style>
-            body{
-                background-color: black;
-                color: white;
-            }
-        </style>
-        <title>Contact us</title>
-    </head>
-    <body align="center">
+
+<head>
+    <style>
+        body {
+            background-color: rgb(10, 30, 88);
+        }
+
+        .container {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background-color: rgb(12, 45, 122);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+        }
+        .form {
+            margin: 10px;
+            text-align: left;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+        .form div {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .form input {
+            width: 300px;
+        }
+        .form label {
+            width: 100px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        
+        .Name input, .Email input, .Subject input {
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #eabdbd;
+            margin-left: 10px;
+        }
+        
+        .Message textarea {
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid #eabdbd;
+            margin-left: 10px;
+            resize: none;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100px;
+            align-self: center;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Contact us</title>
+</head>
+
+<body align="center">
+    <div class="container">
         <h1>Contact us</h1>
         <form>
-            <lable>Name :</lable>
-            <input type="text">
-            <br>
-            <lable>Email : </lable>
-            <input type="email">
-            <br>
-            <lable>Subject </lable>
-            <input type="text">
-            <br>
-            <lable>Message :</lable>
-            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
-            <br>
-            <input type="submit">
+            <div class="form">
+                <div class="Name">
+                    <lable>Name :</lable>
+                    <input type="text">
+                </div>
+                <div class="Email">
+                    <lable>Email : </lable>
+                    <input type="email">
+                </div>
+                <div class="Subject">
+                    <lable>Subject :</lable>
+                    <input type="text">
+                </div>
+                <div class="Message">
+                    <lable>Message :</lable>
+                    <textarea placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit">
+            </div>
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
