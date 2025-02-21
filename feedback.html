@@ -2,7 +2,7 @@
 
 <head>
     <style>
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             background-color: #8495b2;
             margin: 0;
@@ -15,15 +15,15 @@
             border-radius: 10px;
             padding: 30px;
             margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             color: #333;
             margin-bottom: 30px;
         }
-        .feedback
-        form {
+
+        .feedback form {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -35,13 +35,13 @@
         label {
             font-weight: bold;
             margin-right: 10px;
-            
+
         }
 
         input[type="text"],
         input[type="number"],
         input[type="email"] {
-            
+
             padding: 8px;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -79,42 +79,122 @@
         br {
             margin: 10px 0;
         }
+
         .feedback-description {
             margin-top: 20px;
+        } */
+
+        .feedback-form {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #8495b2;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        input type{
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        .email {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .feedback-type {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .feedback-description {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .radio{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        button{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
     <title>Feedback Form</title>
 </head>
 
 <body align="center">
-    <div>
-    <h1>Feedback Form</h1>
-    <form>
-        <lable>Name </lable>
-        <input type="text">
-        <br>
-        <lable> Contact No. </lable>
-        <input type="number">
-        <br>
-        <lable>Email </lable>
-        <input type="email">
-        <br>
-        <lable>Feedback Type :</label>
-            <input type="radio" name="Feedback Type">
-            <lable>comments</lable>
-            <input type="radio" name="Feedback Type">
-            <lable>Suggestions</lable>
-            <input type="radio" name="Feedback Type">
-            <lable>Questions</lable>
-            <br>
-            <div class="feedback-description">
-            <lable>Description of your Feedback :</lable>
-            <textarea placeholder="Type your message here..."></textarea>
+    <div class="feedback-form">
+        <h1>Feedback Form</h1>
+        <form>
+            <div class="name">
+                <lable>Name </lable>
+                <input type="text">
+                <br>
             </div>
-            <br>
-            <input type="submit">
-    </form>
-</div>
+            <div class="contact">
+                <lable> Contact No. </lable>
+                <input type="number">
+                <br>
+            </div>
+            <div class="email">
+                <lable>Email </lable>
+                <input type="email">
+                <br>
+            </div>
+            <div class="feedback-type">
+                <lable>Feedback Type :</label>
+                    <br>
+                    <div class="radio">
+                        <input type="radio" name="Feedback Type">
+                        <lable>comments</lable>
+                        <input type="radio" name="Feedback Type">
+                        <lable>Suggestions</lable>
+
+                        <input type="radio" name="Feedback Type">
+                        <lable>Questions</lable>
+                        <br>
+                    </div>
+            </div>
+            <div class="feedback-description">
+                <lable>Description of your Feedback :</lable>
+                <textarea placeholder="Type your message here..."></textarea>
+                <br>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
