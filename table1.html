@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+        #A {
+            height: 7em;
+            text-align: center;
+            vertical-align: text-top;
+            background-color: red;
+        }
+        #B {
+            height: 7em;
+            color: black;
+            text-align: center;
+            background-color: yellow;
+        }
+    </style>
     <title>Alphabet</title>
 </head>
+
 <body>
-    <table border="1" align="center" style="height: 70%; width: 70%;">
-        <tr>
-            <td rowspan="3" style="text-align: center; vertical-align: text-top;">A</td>
-            <td colspan="5" style="text-align: center;">B</td>
-        </tr>
-        <tr style="height: 7em; text-align: center;">
-            <td >C</td>
-            <td style="vertical-align: top;">D</td>
-            <td style="vertical-align: bottom;">G</td>
-            <td style="vertical-align: top;">E</td>
-            <td>H</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align: center;">I</td>
-        </tr>
-    </table>
+    <div>
+        <table border="1" align="center" style="height: 70%; width: 70%;">
+            <tr>
+                <td id="A"rowspan="3" style="text-align: center; vertical-align: text-top;">A</td>
+                <td id="B"colspan="5" style="text-align: center;">B</td>
+            </tr>
+            <tr style="height: 7em; text-align: center;">
+                <td>C</td>
+                <td style="vertical-align: top;">D</td>
+                <td style="vertical-align: bottom;">G</td>
+                <td style="vertical-align: top;">E</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">I</td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>

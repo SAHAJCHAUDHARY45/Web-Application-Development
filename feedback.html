@@ -1,26 +1,39 @@
 <html>
-    <head>
-        <style>
-            body {
-            background-color: black;
-            color: white;
+
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+            color: blue;
         }
-        </style>
-        <title>Feedback Form</title>
-    </head>
-    <body align="center">
-        <h1>Feedback Form</h1>
-        <form>
-            <lable>Name :</lable>
-            <input type="text">
-            <br>
-            <lable> Contact No. :</lable>
-            <input type="number">
-            <br>
-            <lable>Email : </lable>
-            <input type="email">
-            <br>
-            <lable>Feedback Type</label>
+        div {
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+    </style>
+    <title>Feedback Form</title>
+</head>
+
+<body align="center">
+    <div>
+    <h1>Feedback Form</h1>
+    <form>
+        <lable>Name :</lable>
+        <input type="text">
+        <br>
+        <lable> Contact No. :</lable>
+        <input type="number">
+        <br>
+        <lable>Email : </lable>
+        <input type="email">
+        <br>
+        <lable>Feedback Type</label>
             <input type="radio" name="Feedback Type">
             <lable>comments</lable>
             <input type="radio" name="Feedback Type">
@@ -29,9 +42,11 @@
             <lable>Questions</lable>
             <br>
             <lable>Description of your Feedback :</lable>
-            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
+            <textarea placeholder="Type your message here..."></textarea>
             <br>
             <input type="submit">
-        </form>
-    </body>
+    </form>
+</div>
+</body>
+
 </html>
